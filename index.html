@@ -126,7 +126,12 @@
         const database = getDatabase(app);
 
         // รหัสล็อกประจำเครื่องคอมพิวเตอร์
-        const myNodeId = "node_pc_" + navigator.userAgent.replace(/[^a-zA-Z0-9]/g, "").slice(0, 8);
+let myNodeId = localStorage.getItem('assigned_node_id');
+if (!myNodeId) {
+    const randomHex = Math.floor(Math.random() * 16777215).toString(16);
+    myNodeId = "node_pc_" + randomHex;
+    localStorage.setItem('assigned_node_id', myNodeId);
+}
 
         let model = null, isTracking = false, startTime = null, timeInterval = null;
         let localPeopleCount = 0, trackedPeople = [];
