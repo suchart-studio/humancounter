@@ -71,7 +71,7 @@
 <body>
 
     <div class="top-header">
-        <h1>ระบบบันทึกพิกัดและนับจำนวนคน - เทศบาลเมืองประจวบคีรีขันธ์</h1>
+        <h1>ระบบบันทึกพิกัดและนับจำนวนคน</h1>
     </div>
 
     <div class="main-workspace">
@@ -84,7 +84,7 @@
 
         <div class="panel-side">
             <div class="counter-card">
-                <div class="counter-label">👤 จำนวนนักท่องเที่ยวสะสมเครื่องนี้</div>
+                <div class="counter-label">👤 จำนวนสะสมเครื่องนี้</div>
                 <div class="counter-value" id="local-count-text">0</div>
                 <div class="timer-badge" id="timer-display">เวลาเริ่มเดิน: --:--:--</div>
             </div>
@@ -95,7 +95,7 @@
             
             <div class="form-group">
                 <label>📍 1. ตั้งชื่อเรียกพิกัดพิกัด / สถานที่ติดตั้งกล้องนี้</label>
-                <input type="text" id="location-name-input" class="location-input" placeholder="เช่น ประตูทางเข้าหลัก, ศาลาชมวิวชายหาด">
+                <input type="text" id="location-name-input" class="location-input" placeholder="เช่น ประตูทางเข้าหลัก">
             </div>
 
             <div class="form-group" style="margin-top: 5px;">
@@ -135,7 +135,7 @@ if (!myNodeId) {
 
         let model = null, isTracking = false, startTime = null, timeInterval = null;
         let localPeopleCount = 0, trackedPeople = [];
-        let currentLat = 11.8039, currentLng = 99.7961; 
+        let currentLat = 16.4406531, currentLng = 102.8322644; 
         let map, nodeMarker;
 
         function initMap() {
