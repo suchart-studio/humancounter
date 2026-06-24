@@ -125,7 +125,7 @@
 
     <div id="dashboard-main-content" class="main-dashboard-content">
         <div class="top-total-banner">
-            <div class="banner-label">👤 ยอดนักท่องเที่ยวรวมทุกจุดสแกนสะสมทั่วพื้นที่</div>
+            <div class="banner-label">👤 ยอดรวมทุกจุดสแกนสะสมทั่วพื้นที่</div>
             <div class="banner-value" id="global-total-text">0</div>
         </div>
 
@@ -182,7 +182,7 @@
 
         function startDashboardEngine() {
             // สร้างแผนที่ Leaflet 
-            map = L.map('map').setView([11.8039, 99.7961], 13);
+            map = L.map('map').setView([16.4406531, 102.8322644], 13);
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
             // ดักฟังเหตุการณ์การเปลี่ยนแปลงข้อมูล Firebase แบบ Realtime
